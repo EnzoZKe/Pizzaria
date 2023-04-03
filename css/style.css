@@ -1,0 +1,190 @@
+/*reset css para tirar todas as margens dos elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: fit-content;
+    width: auto;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 5px;
+}
+/*estilização do header*/
+header > .logo{
+    transition: 300ms;
+    height: 80px;
+    width: 80px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+header > .logo:hover{
+    transition: 400ms;
+    height: 180px;
+    width: 180px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+footer{
+    height: fit-content;
+    width: auto;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 5px;
+}
+/*estilização do menu*/
+.menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-weight: 600;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.menu li {
+    transition: 400ms;
+    display: flex;
+    justify-items: center;
+}
+
+.menu li:hover {
+    transition: 400ms;
+    display: flex;
+    justify-items: center;
+    background-color: rgb(109, 6, 6);
+}
+/*estilização do banner*/
+.banner{
+    background-image: url(../img/pizza.jpg);
+    background-size: cover;
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 500px;
+    flex-direction:column;
+    justify-content: center;
+    text-shadow: 5px 5px 10px black;
+    box-shadow: 0px 7px 25px green;
+}
+
+#botao1{
+    transition: 200ms;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.208);
+    color: white;
+    border: 3px groove white;
+    border-radius: 5px;
+}
+
+#botao1:hover{
+    transition: 200ms;
+    background-color: rgba(0, 0, 0, 0.53);
+    color: rgb(184, 184, 184);
+    border: 3px groove rgb(184, 184, 184);
+}
+
+.divisao{
+    height: 6px;
+    width: 85%px;
+    background: linear-gradient(to right, white, red, white);
+    border: none;
+}
+
+
+.verde{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+    color: green;
+}
+
+#pvermelho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px;
+    color: red;
+    font-size: 30px;
+}
+
+.pizzas{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    overflow: hidden;
+    min-width: 250px;
+}
+
+.pizzas .preco{
+    margin: 5px;
+    padding: 3px;
+    border: 5px solid yellow;
+    border-radius: 10px;
+    background-color: yellow;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+#piza{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+#scroll{
+    display: flex;
+    overflow: scroll;
+}
+
+#scroll::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.links{
+    border: 5px solid red;
+    background-color: red;
+    list-style-type: none;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+@media (max-width: 400px){
+
+}
